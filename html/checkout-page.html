@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | SomeShine</title>
+    <script
+      src="https://kit.fontawesome.com/5e00427037.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/html/homepage.html">
+        <h2 class="logo">SomeShine</h2>
+      </a>
+    </header>
+    <main>
+      <h1>Checkout</h1>
+      <div class="container">
+        <div class="checkout-item-detail">
+          <section class="address-wrapper">
+            <div class="address-header">
+              <p>Shipping Address</p>
+            </div>
+            <div class="address-body">
+              <div class="address-item">
+                <div class="line"></div>
+                <div class="address-item-detail">
+                  <h3>John Doe</h3>
+                  <p>08123456789</p>
+                  <p class="address-detail">
+                    Jalan Sukun Raya No.09, Besito Kulon, Besito, Kec. Gebog,
+                    Kabupaten Kudus, Jawa Tengah 59333
+                  </p>
+                </div>
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="address-footer">
+              <button>
+                <a href="#" class="btn">Change Address</a>
+              </button>
+            </div>
+          </section>
+          <section class="product-wrapper">
+            <div class="product-detail">
+              <div class="product-image">
+                <img src="/image/facial-cleanser.jpeg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3>Water Based Facial Cleanser</h3>
+                <p>Rp48.000</p>
+              </div>
+            </div>
+            <!-- make shipping method -->
+            <div class="shipping-method">
+              <div class="shipping-header">
+                <p>Shipping Method</p>
+              </div>
+              <div class="shipping-body">
+                <div class="shipping-item">
+                  <div class="shipping-item-detail">
+                    <button>
+                      <p>reguler</p>
+                      <i class="fa-solid fa-angle-down fa-lg" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="line"></div>
+          <div class="item-detail-footer">
+            <p>Subtotal</p>
+            <p>Rp48.000</p>
+          </div>
+        </div>
+        <aside>
+          <div class="summary">
+            <div class="summary-header">
+              <h2>Summary</h2>
+            </div>
+            <div class="summary-body">
+              <div class="summary-item">
+                <p>Total Price (1 Product)</p>
+                <p>Rp48.000</p>
+              </div>
+              <div class="summary-item">
+                <p>Total Shipping Cost</p>
+                <p>Rp10.000</p>
+              </div>
+              <div class="summary-item">
+                <p>Application service fee</p>
+                <p>Rp2.000</p>
+              </div>
+              <div class="line"></div>
+              <div class="summary-item total">
+                <p>Total</p>
+                <p>Rp60.000</p>
+              </div>
+              <div class="summary-item">
+                <button class="btn" id="payment-button">
+                  Choose Payment
+                </button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-content">
+        <div class="brand-content">
+          <h2 class="logo">SomeShine</h2>
+          <p>
+            Jalan Sukun Raya No.09, Besito Kulon, Besito, Kec. Gebog, Kabupaten
+            Kudus, Jawa Tengah 59333
+          </p>
+        </div>
+
+        <div class="link-container">
+          <h3>Link</h3>
+          <ul>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="product-container">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Facial Cleanser</a></li>
+            <li><a href="#">Toner</a></li>
+            <li><a href="#">Moisturizer</a></li>
+            <li><a href="#">Sunscreen</a></li>
+            <li><a href="#">Serum</a></li>
+            <li><a href="#">Eye Cream</a></li>
+          </ul>
+        </div>
+
+        <div class="social-media-container">
+          <h3>Follow Us</h3>
+          <div class="social-media-list">
+            <a href="#"
+              ><img src="/image/icon/facebook.svg" alt="" class="social-icon"
+            /></a>
+            <a href="#"
+              ><img src="/image/icon/instagram.svg" alt="" class="social-icon"
+            /></a>
+            <a href="#"
+              ><img src="/image/icon/youtube.svg" alt="" class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="line"></div>
+
+      <p class="copyright">© 2023 SomeShine.</p>
+    </footer>
+
+    <div class="payment-container" id="payment-popup">
+      <section class="payment-wrapper">
+        <div class="payment-method">
+          <div class="payment-method-header">
+            <img src="/image/icon/close.svg" alt="" id="payment-close-button">
+            <p>Payment</p>
+          </div>
+          <div class="payment-method-list">
+            <div class="payment-method-item">
+              <div class="payment-method-title">
+                <div class="payment-method-icon">
+                  <img src="/image/icon/bank.svg" alt="" />
+                </div>
+                <p>Bank Transfer</p>
+              </div>
+              <input type="radio" />
+            </div>
+            <div class="payment-method-item">
+              <div class="payment-method-title">
+                <div class="payment-method-icon">
+                  <img src="/image/icon/e-money.svg" alt="" />
+                </div>
+                <p>E-money</p>
+              </div>
+              <input type="radio" />
+            </div>
+            <div class="payment-method-item">
+              <div class="payment-method-title">
+                <div class="payment-method-icon">
+                  <img src="/image/icon/store.svg" alt="" />
+                </div>
+                <p>Convenience Store</p>
+              </div>
+              <input type="radio" />
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="payment-method-footer">
+            <div class="summary">
+              <div class="summary-header">
+                <h1>Summary</h1>
+              </div>
+              <div class="summary-body">
+                <div class="summary-item">
+                  <p>Total Price</p>
+                  <p>Rp60.000</p>
+                </div>
+                <div class="summary-item">
+                  <p>Service Charge</p>
+                  <p>Rp2.500</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="payment-button">
+              <div class="price">
+                  <p>Total</p>
+                  <p><strong>Rp62.500</strong></p>
+              </div>
+              <button>
+                  <a href="/html/payment-success-page.html">Checkout Now</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/js/checkout.js"></script>
+  </body>
+</html>

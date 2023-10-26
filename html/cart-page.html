@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <script
+      src="https://kit.fontawesome.com/5e00427037.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/html/homepage.html">
+        <h2 class="logo">SomeShine</h2>
+      </a>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav>
+        <a href="product.html" class="navbar-item">Product</a>
+        <a href="#" class="navbar-item">About</a>
+        <a href="#" class="navbar-item">Blog</a>
+      </nav>
+      <div class="user-content">
+        <a href="cart.html">
+          <img src="/image/icon/cart.svg" alt="" class="cart-icon" />
+        </a>
+        <span></span>
+        <div class="auth-content">
+          <a href="#" class="auth-item login-btn">Login</a>
+          <a href="#" class="auth-item signup-btn">Register</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="user-cart-wrapper">
+        <div class="user-cart-header">
+          <div class="user-cart-select-header">
+            <h2>Cart</h2>
+            <div>
+              <div class="user-cart-select-toggle">
+                <input type="checkbox" />
+                <p>Select All</p>
+              </div>
+              <p>Hapus</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-cart-body">
+          <div class="user-cart-item">
+            <div class="user-cart-select-item">
+              <div class="user-cart-item-detail">
+                <input type="checkbox" />
+                <div class="user-cart-product-image">
+                  <img src="/image/facial-cleanser.jpeg" alt="" />
+                </div>
+                <div class="user-cart-product-title">
+                  <p>Facial Cleanser</p>
+                  <p><strong>Rp48.000</strong></p>
+                </div>
+              </div>
+              <div class="user-cart-item-qty-toggle">
+                <button class="btn">-</button>
+                <input type="text" value="1" />
+                <button class="btn">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div class="user-cart-aside">
+          <div class="user-cart-aside-header">
+            <h2>Summary</h2>
+          </div>
+          <div class="user-cart-aside-body">
+            <div class="user-cart-aside-item">
+              <p>Subtotal</p>
+              <p>Rp48.000</p>
+            </div>
+            <div class="line"></div>
+            <div class="user-cart-aside-item total">
+              <p>Total</p>
+              <p>Rp48.000</p>
+            </div>
+            <div class="user-cart-aside-item">
+              <button class="btn">
+                <a href="checkout-page.html">
+                  Checkout
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <section class="footer-content">
+        <div class="brand-content">
+          <h2 class="logo">SomeShine</h2>
+          <p>
+            Jalan Sukun Raya No.09, Besito Kulon, Besito, Kec. Gebog, Kabupaten
+            Kudus, Jawa Tengah 59333
+          </p>
+        </div>
+
+        <div class="link-container">
+          <h3>Link</h3>
+          <ul>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="product-container">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Facial Cleanser</a></li>
+            <li><a href="#">Toner</a></li>
+            <li><a href="#">Moisturizer</a></li>
+            <li><a href="#">Sunscreen</a></li>
+            <li><a href="#">Serum</a></li>
+            <li><a href="#">Eye Cream</a></li>
+          </ul>
+        </div>
+
+        <div class="social-media-container">
+          <h3>Follow Us</h3>
+          <div class="social-media-list">
+            <a href="#"
+              ><img src="/image/icon/facebook.svg" alt="" class="social-icon"
+            /></a>
+            <a href="#"
+              ><img src="/image/icon/instagram.svg" alt="" class="social-icon"
+            /></a>
+            <a href="#"
+              ><img src="/image/icon/youtube.svg" alt="" class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="line"></div>
+
+      <p class="copyright">© 2023 SomeShine.</p>
+    </footer>
+  </body>
+</html>
