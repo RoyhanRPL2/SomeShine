@@ -42,10 +42,10 @@ header {
 }
 
 header nav {
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 header nav .navbar-item {
@@ -54,6 +54,7 @@ header nav .navbar-item {
   font-weight: 500;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  margin: 0 5rem;
 }
 
 header nav .navbar-item:hover {
@@ -89,10 +90,14 @@ header nav .navbar-item:hover::after {
 }
 
 header .user-content {
-  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.user-content a {
+  display: flex;
+  align-items: center;
 }
 
 header .user-content span {
@@ -132,6 +137,10 @@ header .user-content .auth-content .signup-btn {
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+
+header .menu-toggle {
+  display: none;
 }
 
 main {
@@ -262,100 +271,519 @@ main
 }
 
 footer {
-    width: 100%;
-    padding: 2rem 6rem;
-    background-color: #f5eee7;
+  width: 100%;
+  padding: 2rem 6rem;
+  background-color: #f5eee7;
+}
+
+footer .footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .brand-content {
+  width: 35%;
+  flex-direction: column;
+}
+
+.brand-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-component .link-container {
+  flex-direction: column;
+}
+
+.link-container h3 {
+  margin-bottom: 1rem;
+}
+
+.link-container ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.link-container ul li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.product-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.product-container ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.product-container ul li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.social-media-container {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-container h3 {
+  margin-bottom: 1rem;
+}
+
+.social-media-container .social-media-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-content .social-media .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 2rem 0;
+}
+
+footer .copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 1rem 4rem;
   }
-  
-  footer .footer-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+  header nav .navbar-item {
+    margin: 0 2.5rem;
   }
-  
-  .footer-content .brand-content {
-    width: 35%;
-    flex-direction: column;
+
+  header .user-content .auth-content .login-btn {
+    padding: 0.5rem 1.5rem;
   }
-  
-  .brand-content h2 {
-    margin-bottom: 0.5rem;
+
+  header .user-content .auth-content .signup-btn {
+    padding: 0.5rem 1.5rem;
   }
-  
-  .footer-component .link-container {
-    flex-direction: column;
+
+  main {
+    padding: 7rem 4rem;
   }
-  
-  .link-container h3 {
-    margin-bottom: 1rem;
+
+  main .product-container .product-list {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .link-container ul li {
-    list-style: none;
-    margin-bottom: 0.5rem;
+
+  main .product-container .product-list .product-card {
+    margin-bottom: 2rem;
   }
-  
-  .link-container ul li a {
+
+  main .product-container .product-list .product-card .product-image {
+    height: 400px;
+  }
+
+  main .product-container .product-list .product-card .product-info section h3 {
     font-size: 0.9rem;
-    font-weight: 500;
-    color: #000;
-    transition: all 0.3s ease;
   }
-  
-  .product-container h3 {
+
+  main
+    .product-container
+    .product-list
+    .product-card
+    .product-info
+    section
+    .price {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 2rem 3rem;
+  }
+
+  .footer-content .brand-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content .brand-content p {
+    font-size: 0.9rem;
+  }
+
+  .footer-content .link-container h3 {
     font-size: 1.2rem;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 1rem;
   }
-  
-  .product-container ul li {
-    list-style: none;
-    margin-bottom: 0.5rem;
-  }
-  
-  .product-container ul li a {
+
+  .footer-content .link-container ul li a {
     font-size: 0.9rem;
-    font-weight: 500;
-    color: #000;
-    transition: all 0.3s ease;
   }
-  
-  .social-media-container {
-    width: 10%;
-    display: flex;
+
+  .footer-content .product-container h3 {
+    font-size: 1rem;
+  }
+
+  .footer-content .product-container ul li a {
+    font-size: 0.8rem;
+  }
+
+  .footer-content .social-media-container h3 {
+    font-size: 1rem;
+  }
+
+  .footer-content .social-media-container .social-media-list a img {
+    width: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  header {
+    padding: 1rem 3rem;
+  }
+
+  header a h2 {
+    font-size: 1.2rem;
+  }
+
+  header .menu-toggle {
+    display: none;
+  }
+
+  header nav .navbar-item {
+    font-size: 0.8rem;
+  }
+
+  header .user-content .auth-content .login-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  header .user-content .auth-content .signup-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    padding: 7rem 3rem;
+  }
+
+  main #title {
+    font-size: 2rem;
+  }
+
+  main .product-container h1 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    padding: 2rem 3rem;
+  }
+
+  .footer-content .brand-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content .brand-content p {
+    font-size: 0.9rem;
+  }
+
+  .footer-content .link-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-content .link-container ul li a {
+    font-size: 0.9rem;
+  }
+
+  .footer-content .product-container h3 {
+    font-size: 1rem;
+  }
+
+  .footer-content .product-container ul li a {
+    font-size: 0.8rem;
+  }
+
+  .footer-content .social-media-container h3 {
+    font-size: 1rem;
+  }
+
+  .footer-content .social-media-container .social-media-list a img {
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 1rem 1rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .user-content {
+    display: none;
+  }
+
+  header .menu-toggle {
+    display: block;
+  }
+
+  header .menu-toggle .bar {
+    width: 23px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+  }
+
+  main {
+    padding: 7rem 2rem;
+  }
+
+  main #title {
+    font-size: 1.5rem;
+  }
+
+  main .product-container h1 {
+    font-size: 1.2rem;
+  }
+
+  main .product-container .product-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .product-container .product-list .product-card {
+    margin-bottom: 2rem;
+  }
+
+  main .product-container .product-list .product-card .product-image {
+    height: 370px;
+  }
+
+  main .product-container .product-list .product-card .product-info section h3 {
+    font-size: 0.8rem;
+  }
+
+  main
+    .product-container
+    .product-list
+    .product-card
+    .product-info
+    section
+    .price {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 2rem 3rem;
+  }
+
+  .footer-content .brand-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content .brand-content p {
+    font-size: 0.9rem;
+  }
+
+  .footer-content .link-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-content .link-container ul li a {
+    font-size: 0.9rem;
+  }
+
+  .footer-content .product-container h3 {
+    font-size: 1rem;
+  }
+
+  .footer-content .product-container ul li a {
+    font-size: 0.8rem;
+  }
+
+  .footer-content .social-media-container h3 {
+    font-size: 1rem;
+  }
+
+  .footer-content .social-media-container .social-media-list a img {
+    width: 15px;
+  }
+
+  .social-media-container .social-media-list a {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 1rem 1rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .user-content {
+    display: none;
+  }
+
+  header .menu-toggle {
+    display: block;
+  }
+
+  header .menu-toggle .bar {
+    width: 23px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+  }
+
+  main {
+    padding: 7rem 2rem;
+  }
+
+  main #title {
+    font-size: 1.5rem;
+  }
+
+  main .product-container h1 {
+    font-size: 1.2rem;
+  }
+
+  main .product-container .product-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .product-container .product-list .product-card {
+    margin-bottom: 2rem;
+  }
+
+  main .product-container .product-list .product-card .product-image {
+    height: 450px;
+  }
+
+  main .product-container .product-list .product-card .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  main .product-container .product-list .product-card .product-info section h3 {
+    font-size: 0.8rem;
+  }
+
+  main
+    .product-container
+    .product-list
+    .product-card
+    .product-info
+    section
+    .price {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 2rem 1.2rem;
+  }
+
+  .footer-content {
+    width: 100%;
     flex-direction: column;
   }
-  
-  .social-media-container h3 {
+
+  .footer-content .brand-content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-content .brand-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content .brand-content p {
+    font-size: 0.9rem;
+  }
+
+  .footer-content .link-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-content .link-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-content .link-container ul {
+    width: 100%;
     margin-bottom: 1rem;
   }
-  
-  .social-media-container .social-media-list {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .footer-content .link-container ul li a {
+    font-size: 1rem;
   }
-  
-  .brand-content .social-media .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  
-  footer .line {
+
+  .footer-content .product-container {
     width: 100%;
-    height: 1px;
-    background-color: #000;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
   }
-  
-  footer .copyright {
+
+  .footer-content .product-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-content .product-container ul {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 1rem;
   }
+
+  .footer-content .product-container ul li a {
+    font-size: 1rem;
+  }
+
+  .footer-content .social-media-container {
+    width: 100%;
+  }
+
+  .footer-content .social-media-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-content .social-media-container .social-media-list {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .footer-content .social-media-container .social-media-list a img {
+    width: 20px;
+  }
+}

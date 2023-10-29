@@ -42,10 +42,10 @@ header {
 }
 
 header nav {
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 header nav .navbar-item {
@@ -54,6 +54,7 @@ header nav .navbar-item {
   font-weight: 500;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  margin: 0 5rem;
 }
 
 header nav .navbar-item:hover {
@@ -89,10 +90,14 @@ header nav .navbar-item:hover::after {
 }
 
 header .user-content {
-  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.user-content a {
+  display: flex;
+  align-items: center;
 }
 
 header .user-content span {
@@ -132,6 +137,10 @@ header .user-content .auth-content .signup-btn {
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+
+header .menu-toggle {
+  display: none;
 }
 
 main {
@@ -644,4 +653,44 @@ footer .copyright {
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 1rem 4rem;
+  }
+
+  header nav .navbar-item {
+    margin: 0 2.5rem;
+  }
+
+  header .user-content .auth-content .login-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  header .user-content .auth-content .signup-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    padding: 2rem 4rem;
+  }
+
+  main .product-preview {
+    flex-direction: column;
+  }
+
+  main .product-preview .product-image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  main .product-preview .product-image .img-box {
+    width: 100%;
+    height: 400px;
+  }
+
+  main .product-preview .product-image .img-list {
+    padding: 0 4rem;
+  }
 }
