@@ -7,30 +7,35 @@
   <title>SomeShine</title>
   <script src="https://kit.fontawesome.com/5e00427037.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/homepage.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
   <header>
-    <a href="index.html">
-      <h2 class="logo">SomeShine</h2>
-    </a>
-    <div class="menu-toggle">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-    <nav>
-      <a href="product.html" class="navbar-item">Product</a>
-      <a href="#" class="navbar-item">About</a>
-      <a href="#" class="navbar-item">Blog</a>
-    </nav>
-    <div class="user-content">
-      <a href="cart-page.html">
-        <img src="./image/icon/cart.svg" alt="" class="cart-icon" />
+    <div class="header-content">
+      <a href="index.html">
+        <h2 class="logo">SomeShine</h2>
       </a>
-      <span></span>
-      <div class="auth-content">
-        <img src="./image/icon/user.svg" alt="" />
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="navbar-item"><a href="product.html">Product</a></li>
+          <li class="navbar-item"><a href="#">About</a></li>
+          <li class="navbar-item"><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="user-content">
+        <a href="cart-page.html">
+          <img src="./image/icon/cart.svg" alt="" class="cart-icon" />
+        </a>
+        <span></span>
+        <div class="auth-content">
+          <img src="./image/icon/user.svg" alt="" />
+        </div>
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
     </div>
   </header>
@@ -276,6 +281,8 @@
       </div>
     </div>
   </div>
+
+  <script src="/js/navbar.js"></script>
 </body>
 
 </html>
